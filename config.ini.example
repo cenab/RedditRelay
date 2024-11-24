@@ -1,0 +1,25 @@
+[reddit]
+client_id = your_client_id
+client_secret = your_client_secret
+username = your_username
+password = your_password
+user_agent = PostBot by u/your_username
+
+[post]
+title = XBot: An Open-Source Intelligent Twitter Assistant
+body = """
+Introducing **XBot**, an intelligent Twitter-based assistant designed to provide informative and accurate responses based on ingested data.
+
+### Features:
+- **Data Ingestion**: Automatically fetches and processes data from specified URLs to build a comprehensive knowledge base.
+- **Conversational AI**: Utilizes OpenAI's GPT-4 model for context-aware responses.
+- **Twitter Integration**: Seamlessly posts tweets and sends direct messages (DMs) based on user interactions.
+- **Customizable Character Profile**: Control interaction style, tone, and content.
+- **Error Handling**: Robust mechanisms to handle API failures gracefully.
+- **Open Source**: View the source code on [GitHub](https://github.com/yourusername/xbot).
+
+Check out the full documentation here: [GitHub Repository](https://github.com/yourusername/xbot)
+"""
+
+[subreddits]
+list = programming,opensource,learnprogramming,python,artificial,MachineLearning,datascience,TwitterDev,webdev,startups,coding,developers,bigdata,ai_dev,SideProject,SoftwareEngineering,technews,technology,devops,productivity

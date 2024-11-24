@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Configuration
+config.ini
+
+# Virtual environment
+venv/
