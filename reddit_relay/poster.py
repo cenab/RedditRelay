@@ -18,9 +18,17 @@ class RedditPoster:
             user_agent=config.reddit_credentials["user_agent"],
         )
         self.title = config.post_content["title"]
-        self.body = config.post_content["body"]
+        self.body = self._process_body_text(config.post_content["body"])
         self.subreddits = config.subreddits
         self.logger = logging.getLogger(__name__)
+
+    def _process_body_text(self, text: str) -> str:
+        """Convert escaped newlines back to actual newlines and handle other formatting."""
+        # Replace escaped newlines with actual newlines
+        text = text.replace('\\n', '\n')
+        # Remove any extra whitespace
+        text = text.strip()
+        return text
 
     def post_to_subreddits(self):
         for subreddit_name in self.subreddits:
